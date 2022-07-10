@@ -1,17 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="serve logo" src="./assets/logo.png">
+  <h1>欢迎使用应用更新订阅服务</h1>
+  <user-login />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { defineComponent } from "vue";
+import UserLogin from "@/components/UserLogin";
 
-export default {
-  name: 'App',
+export default defineComponent({
   components: {
-    HelloWorld
-  }
-}
+    UserLogin,
+  },
+});
 </script>
 
 <style>
